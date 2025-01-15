@@ -1,0 +1,16 @@
+﻿.swagger-ui {
+    color: #2b9ed2;
+    font-family: sans-serif /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */;
+}
+
+
+    .swagger-ui .topbar {
+        background-color: #2b9ed2;
+        padding: 10px 0;
+    }
+
+#swagger-ui > section > div.topbar > div > div > a > img {
+    content: url("https://thinkministryinc.blob.core.windows.net/publicimages/mplogo_white.png");
+}
+
+/* https://thinkministryinc.blob.core.windows.net/publicimages/mplogo_white.png */

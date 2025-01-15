@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>6f463bbc-c008-4a83-a01b-349b2b7739fd</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Title>MP Sky Microservices</Title>
+    <Copyright>2025 ACS Technologies</Copyright>
+    <FileVersion>2024.12.19.1</FileVersion>
+    <AssemblyVersion>2024.12.19.1</AssemblyVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <ApplicationInsightsResourceId>/subscriptions/d8b7a8af-92c3-4d44-b4cd-177d25f424dd/resourceGroups/MP.Sky/providers/microsoft.insights/components/MPSky</ApplicationInsightsResourceId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="appsettings.Development.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="appsettings.Development.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ical.Net" Version="4.3.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="8.3.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="MinistryPlatform.Wrapper" Version="2024.8.28.1" />
+    <PackageReference Include="mixpanel-csharp" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NodaTime" Version="3.2.0" />
+    <PackageReference Include="NodaTime.Serialization.JsonNet" Version="3.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    <PackageReference Include="System.Runtime.Caching" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\swagger-ui\custom.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
